@@ -2,6 +2,7 @@
     --cor-de-fundo: #31313B;
     --icones: #5c626a;
     --titulo: #FCFBFC;
+    --background-elementos: #23232e;
 }
 
 * {
@@ -14,7 +15,7 @@ body {
 
 main {
     display: flex;
-    margin: 20px;
+    margin: 10px;
     background-color: #181822;
     border: solid transparent;
     border-radius: 20px;
@@ -34,8 +35,42 @@ header i {
     color: var(--icones);
 }
 
+.texto-header-titulo {
+    margin-right: 30px;
+}
+
 .titulo {
+    margin-top: 10px;
     color: var(--titulo);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.subtitulo {
+    color: var(--icones);
+    font-size: 10px;
+}
+
+.input-busca {
+    border: transparent solid;
+    border-radius: 20px;
+    background-color: var(--background-elementos);
+    padding: 5px 10px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.icones-contas {
+    margin-top: 10px;
+    margin-left: 120px; 
+}
+
+.icones-contas i {
+    padding: 0 3px;
+}
+
+.icones-contas i:last-child {
+    font-size: 8px;
 }
 
 /* NAVBAR */
