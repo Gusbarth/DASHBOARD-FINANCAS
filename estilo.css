@@ -41,12 +41,13 @@ header i {
 /* NAVBAR */
 nav {
     height: 100vh;
-    width: 100px;
+    padding: 0 20px 0 0;
 }
 
 .mini-btns {
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .btn-vermelho,
@@ -73,7 +74,7 @@ nav {
 .icones i {
     color: var(--icones);
     display: block;
-    margin: 20px 10px 0 0;
-    text-align: justify;
+    margin: 20px 0 0 0;
+    text-align: center;
     font-size: 15px; 
 }
