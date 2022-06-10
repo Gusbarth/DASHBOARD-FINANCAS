@@ -3,6 +3,8 @@
     --icones: #5c626a;
     --titulo: #FCFBFC;
     --background-elementos: #23232e;
+    --cor-cartao-light: #61aba4;
+    --cor-cartao-dark: #4a958d;
 }
 
 * {
@@ -112,4 +114,20 @@ nav {
     margin: 20px 0 0 0;
     text-align: center;
     font-size: 15px; 
+}
+
+/* ASIDE */
+aside {
+    height: 80vh;
+}
+
+.cartao {
+    background-image: linear-gradient(to top right, #61aba4, #4a958d);
+    padding: 10px;
+    border: transparent solid;
+    border-radius: 20px;
+}
+
+aside img {
+    height: 16px;
 }
