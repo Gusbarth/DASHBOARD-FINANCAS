@@ -15,8 +15,35 @@ body {
     background-color: var(--cor-de-fundo);
 }
 
+header {
+    border: 1px solid white;
+}
+
+nav {
+    border: 1px solid white;
+}
+
+section {
+    border: 1px solid white;
+}
+
+aside {
+    border: 1px solid white;
+}
+
+.wrapper {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+header {
+    grid-column: 1 / -1;
+}
+
 main {
-    display: flex;
     margin: 10px;
     background-color: #181822;
     border: solid transparent;
@@ -25,10 +52,6 @@ main {
 }
 
 /* HEADER */
-header {
-    display: flex;
-}
-
 header img {
     width: 16px;
 }
@@ -130,4 +153,19 @@ aside {
 
 aside img {
     height: 16px;
+}
+
+.numero-cartao p {
+    font-size: 10px;
+    color: white;
+}
+
+.info-texto-holder {
+    font-size: 6px;
+    color: rgba(250, 250, 250,0.7);
+    margin-bottom: 5px;
+}
+.infor-texto-nome {
+    font-size: 5px;
+    color: white;
 }
