@@ -19,10 +19,6 @@ header {
     border: 1px solid white;
 }
 
-nav {
-    border: 1px solid white;
-}
-
 section {
     border: 1px solid white;
 }
@@ -34,13 +30,27 @@ aside {
 .wrapper {
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(12, minmax(auto,auto));
+    grid-template-rows: 12;
     grid-gap: 5px;
 }
 
+nav {
+    grid-row: 1 / 4;
+}
+
 header {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
+}
+
+section {
+    grid-column: 2 / 13;
+    grid-row: 2 / 4;
+}
+
+aside {
+    grid-column: 12 / 13;
+    grid-row: 2 / 4;
 }
 
 main {
@@ -52,6 +62,9 @@ main {
 }
 
 /* HEADER */
+.header-flexbox {
+    display: flex;
+}
 header img {
     width: 16px;
 }
@@ -62,6 +75,7 @@ header i {
 
 .texto-header-titulo {
     margin-right: 30px;
+    display: block;
 }
 
 .titulo {
@@ -74,6 +88,10 @@ header i {
 .subtitulo {
     color: var(--icones);
     font-size: 10px;
+}
+
+.busca {
+    display: flex;
 }
 
 .input-busca {
