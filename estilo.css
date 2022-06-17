@@ -23,10 +23,6 @@ section {
     border: 1px solid white;
 }
 
-aside {
-    border: 1px solid white;
-}
-
 .wrapper {
     display: grid;
     padding: 10px;
@@ -35,22 +31,22 @@ aside {
     grid-gap: 5px;
 }
 
-nav {
-    grid-row: 1 / 4;
+header {
+    grid-column: 2 / 12;
 }
 
-header {
-    grid-column: 2 / -1;
+nav {
+    grid-row: 1 / 12;
 }
 
 section {
-    grid-column: 2 / 13;
-    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+    grid-row: 2 / 12;
 }
 
 aside {
-    grid-column: 12 / 13;
-    grid-row: 2 / 4;
+    grid-column: 10 / 12;
+    grid-row: 2 / 12;
 }
 
 main {
@@ -98,14 +94,13 @@ header i {
     border: transparent solid;
     border-radius: 20px;
     background-color: var(--background-elementos);
-    padding: 5px 10px;
-    font-size: 10px;
-    margin-top: 10px;
+    padding: 3px 5px;
+    margin: 10px 0;
 }
 
 .icones-contas {
     margin-top: 10px;
-    margin-left: 120px; 
+    margin-left: 100px; 
 }
 
 .icones-contas i {
@@ -165,25 +160,154 @@ aside {
 .cartao {
     background-image: linear-gradient(to top right, #61aba4, #4a958d);
     padding: 10px;
+    margin: 15px;
     border: transparent solid;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0,0.8);
 }
 
 aside img {
-    height: 16px;
+    height: 10px;
 }
 
 .numero-cartao p {
-    font-size: 10px;
-    color: white;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    margin: 3px 0 10px 0;
 }
 
 .info-texto-holder {
-    font-size: 6px;
-    color: rgba(250, 250, 250,0.7);
+    font-size: 5px;
+    color: rgba(250, 250, 250, 0.849);
     margin-bottom: 5px;
 }
 .infor-texto-nome {
     font-size: 5px;
     color: white;
+}
+
+.bandeira-cartao img {
+    float: right;
+    height: 15px;
+}
+
+.atividades-recentes {
+    color: white;
+    font-size: 5px;
+}
+
+.atividades-recentes img {
+    background-color: var(--icones);
+    border: transparent solid;
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.recente-div {
+    margin: -5px 15px 10px 15px;
+}
+
+.recente-div h3 {
+    font-size: 7px;
+    color: white;
+}
+
+.recente-div p {
+    margin-top: 3px;
+    color: var(--icones);
+}
+
+.agua-div {
+    margin: 0 15px;
+}
+
+.salario-div {
+    margin: 0 15px;
+}
+
+.energia-div {
+    margin: 0 15px;
+}
+
+.internet-div {
+    margin: 0 15px;
+}
+
+.upcoming-payments {
+    color: white;
+    font-size: 5px;
+}
+
+.upcoming-payments img {
+    background-color: var(--icones);
+    border: transparent solid;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.pagamento-div {
+    margin: 10px 15px;
+}
+
+.pagamento-div h3 {
+    font-size: 8px;
+    color: white;
+}
+
+.pagamento-div p {
+    margin-top: 3px;
+    color: var(--icones);
+}
+
+.casa-div {
+    margin: 0 15px;
+}
+
+
+.carro-div {
+    margin: 0 15px;
+}
+
+/* SECTION */
+.opcoes-transfer div {
+    border: transparent solid;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card-number {
+    background-image: linear-gradient(to top left, #17201f, #252c4f); 
+}
+
+.one-bank {
+    background-image: linear-gradient(to top left, #17201f, #252c4f); 
+}
+
+.other-banks {
+    background-image: linear-gradient(to top right, #252c4f, #2c4645);
+}
+
+.someother-bank {
+    background-image: linear-gradient(to top right, #252c4f, #2c4645);
+}
+.opcoes-transfer img {
+    height: 15px;
+    color: var(--icones);
+}
+
+.subtitulo-transfer {
+    color: var(--icones);
+    font-size: 10px;
+}
+
+.quantia {
+    color: var(--titulo);
+    font-weight: bold;
+}
+
+.quantia-grafico {
+    color: var(--titulo);
+    font-size: 26px;
 }
